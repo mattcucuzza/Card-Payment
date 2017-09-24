@@ -1,0 +1,207 @@
+body {
+	background-color: #7f8c8d;
+}
+
+.viewCard {
+	background-color: #ecf0f1;
+	/* text-align: center; */
+	height: 300px;
+	margin-top: 100px;
+	border-radius: 4px;
+	padding-left: 0;
+	padding-right:0;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	border: 1px solid rgba(245,245,245,.15)
+}
+
+.chooseBtn {
+	position: absolute; 
+	bottom: 0;
+}
+
+.selectBtn {
+	background-color: #FFF;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 2px;
+	margin-top: 120px;
+}
+
+.selectBtn:hover {
+	cursor: pointer;
+}
+
+.prevBtn {
+	margin-top: 120px; 
+	margin-left: 20px; 
+	color: #CCC;
+	z-index: 1;
+	position: absolute; 
+	font-size: 20px;
+}
+
+.prevBtn:hover {
+	color: #f1c40f;
+	cursor: pointer;
+}
+
+.nextBtn {
+	margin-top: 120px; 
+	margin-left: -35px;
+	/* margin-right: 20px;  */
+	color: #CCC;
+	position: absolute;  
+	z-index: 1;
+	font-size: 20px;
+}
+
+.nextBtn:hover {
+	color: #f1c40f;
+	cursor: pointer;
+}
+
+.hiddenCard {
+	background-color: rgba(245,245,245,0.4);
+	text-align: center;
+	height: 150px;
+	/* margin-left: 15px; */
+	/* width: 75%; */
+	margin-top: 150px;
+	border-radius: 4px;
+	padding-left: 0;
+	padding-right:0;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	border: 1px solid rgba(245,245,245,.15)
+}
+
+.hiddenImage {
+	opacity: 0.35;
+	height: 100px; 
+	padding-top: 50px;
+}
+
+.activeSlide {
+	background-color: #f1c40f;
+	border: 1px solid #f1c40f;
+}
+
+.centeredRow {
+	height: 100%; 
+	margin-top: 50px;
+}
+
+.middleCol {
+	background-color: #ecf0f1;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);	
+}
+
+.enterCard {
+	color: #ecf0f1;
+	background: linear-gradient(-45deg, #36AE92, #0C4465);
+	text-align: center;
+	height: 300px;
+	/* margin-top: 100px; */
+	border-radius: 4px;
+	padding-left: 0;
+	padding-right:0;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	/* border: 1px solid rgba(245,245,245,.15) */
+}
+
+.cardLogo {
+	height: 70px; 
+	position: absolute; 
+	/* bottom: 0;  */
+	top: 10;
+	right: 15;
+}
+
+.cardName {
+	position: absolute; 
+	bottom: 15;
+	left: 30;
+	font-family:"Inconsolata";
+	font-weight: bold;
+	font-size: 15px;
+	height: 45px;
+}
+
+.displayName {
+	margin: 0;
+}
+
+.emptyName {
+	background-color: #ecf0f1;
+	height: 1px;
+	width: 100%;
+	position: absolute; 
+	bottom: 4;
+}
+
+.numRow {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.cardNumberCol {
+	padding-top: 40px;
+	text-align: center; 
+	height: 50%;
+	font-family:"Inconsolata";
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.expCol {
+	position: absolute; 
+	bottom: 15;
+	right: 30;
+	font-family:"Inconsolata";
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.enterTitle {
+	height: 35px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.enterCardInfo {
+	margin-top: 20px;
+	padding: 0;
+	background-color: #ecf0f1;
+}
+
+.enterRow {
+	margin-top: 10px;
+}
+
+.firstEnterInput {
+	padding-right: 5px;
+}
+
+.middleEnterInput {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.endEnterInput {
+	padding-left: 5px;
+}
+
+input.form-control {
+	padding: 20px;
+}
+
+.ng-hide {
+	height: 0;
+	width: 0;
+	background-color: transparent;
+	top:-200px;
+	left: 200px;
+  }

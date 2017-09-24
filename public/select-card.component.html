@@ -1,0 +1,29 @@
+<container-fluid>
+	<div class="row">
+		<div class="col-xs-3" style="height:200px">
+			<div class="hiddenCard">
+				<img class="hiddenImage" draggable="false" ng-src="{{$ctrl.getPreviousHiddenCard($ctrl.index)}}">
+			</div>
+		</div>
+		<div class="col-xs-6 viewCard">
+			<div class="row">
+				<i class="fa fa-chevron-left prevBtn" ng-click="$ctrl.updateCards($ctrl.index-1)"></i>
+				<div class="col-xs-12 text-center">
+					<img draggable="false" ng-src="{{$ctrl.getActiveCard($ctrl.index)}}" style="height: 200px; padding-top: 50px;">
+				</div>
+				<i class="fa fa-chevron-right nextBtn" ng-click="$ctrl.updateCards($ctrl.index+1)"></i>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="selectBtn text-center" ng-repeat="slide in $ctrl.slides" ng-click="$ctrl.updateCards(slide.id)" ng-class="{'activeSlide': slide.id == $ctrl.index}"></div>
+				</div>
+			</div>
+			<a class="btn btn-success btn-block chooseBtn" ng-href="#/pay/{{$ctrl.index}}">Choose</a>
+		</div>
+		<div class="col-xs-3" style="height:200px">
+			<div class="hiddenCard">
+				<img class="hiddenImage" draggable="false" ng-src="{{$ctrl.getNextHiddenCard($ctrl.index)}}">
+			</div>
+		</div>
+	</div>
+</container-fluid>

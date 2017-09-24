@@ -1,0 +1,85 @@
+<container-fluid>
+	<!-- <div class="row">
+		<div class="col-xs-4 col-xs-offset-4">
+			<h4 class="text-center" style="margin-top: 100px; margin-bottom: -70px; color: white">Enter Card Information</h4>
+		</div>
+	</div> -->
+	<div class="row centeredRow">
+		<div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2 middleCol">
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="enterCard">
+						<div class="row" style="margin-left: 0; margin-right:0">
+							<div class="col-md-4 col-md-offset-8 col-xs-5 col-xs-offset-7" style="text-align: right; height: 25%;">
+								<img class="cardLogo" draggable="false" ng-src="{{$ctrl.selected.image}}">
+							</div>
+						</div>
+						<div class="row numRow">
+							<div class="col-md-3 col-xs-3 cardNumberCol">
+								<h1>{{$ctrl.splitNumber($ctrl.cardNumber, 0, 4)}}</h1>
+							</div>
+							<div class="col-md-3 col-xs-3 cardNumberCol">
+								<h1>{{$ctrl.splitNumber($ctrl.cardNumber, 4, 8)}}</h1>
+							</div>
+							<div class="col-md-3 col-xs-3 cardNumberCol">
+								<h1>{{$ctrl.splitNumber($ctrl.cardNumber, 8, 12)}}</h1>
+							</div>
+							<div class="col-md-3 col-xs-3 cardNumberCol">
+								<h1>{{$ctrl.splitNumber($ctrl.cardNumber, 12, 16)}}</h1>
+							</div>
+						</div>
+						<div class="row" style="margin-left: 0; margin-right: 0">
+							<div class="col-md-8 col-xs-7" style="text-align: left; height: 25%;">
+								<div class="cardName">
+									<p class="displayName">CARD HOLDER</p>
+									<p class="displayName" ng-if="$ctrl.name">{{$ctrl.upperCase($ctrl.name)}}</p>
+									<div class="displayName emptyName" ng-if="!$ctrl.name"></div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-5" style="text-align: right; height: 25%;">
+								<div class="expCol">
+									<p class="displayName">EXPIRES</p>
+									<p class="displayName">{{$ctrl.monthExpiration ? $ctrl.monthExpiration : "MM"}}/{{$ctrl.yearExpiration ? $ctrl.yearExpiration : "YY"}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="enterTitle">
+						<h4>Enter Card Information</h4>
+					</div>
+					<form name="addCard">
+						<div class="row">
+							<div class="col-xs-12">
+								<input ng-model="$ctrl.cardNumber" type="text" placeholder="Card Number" maxLength="16" class="form-control" required>
+							</div>
+						</div>
+						<div class="row enterRow">
+							<div class="col-xs-6 firstEnterInput">
+								<input ng-model="$ctrl.name" type="text" placeholder="Card Holder" maxLength="42" class="form-control" required>
+							</div>
+							<div class="col-xs-3 middleEnterInput">
+								<input ng-model="$ctrl.monthExpiration" type="text" placeholder="MM" maxLength="2" class="form-control text-center" required>
+							</div>
+							<div class="col-xs-3 endEnterInput">
+								<input ng-model="$ctrl.yearExpiration" type="text" placeholder="YY" maxLength="2" class="form-control text-center" required>
+							</div>
+						</div>
+					</form>
+					<div class="row">
+						<div class="col-xs-6">
+							<button type="submit" class="btn btn-success btn-block" ng-click="$ctrl.submit()" ng-disabled="addCard.$invalid">Submit</button>
+						</div>
+						<div class="col-xs-6">
+							<a class="btn btn-danger btn-block" ng-href="#">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</container-fluid>
